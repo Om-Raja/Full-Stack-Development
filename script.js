@@ -1,1 +1,0 @@
-alert("This is alert written in .js file")
