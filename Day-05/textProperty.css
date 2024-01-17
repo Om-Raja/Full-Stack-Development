@@ -1,0 +1,45 @@
+h2 {
+    text-align: center;
+    /* font-weight: 400; by default normal value */
+    /* font-weight: 700; by default bold value */
+    /* font-weight: 100; minmum value is 100 and max is 800 */
+    text-decoration: dotted underline;
+    text-decoration-color: #0f0;
+    letter-spacing: 3px;
+    font-size: 40px;
+    font-family: cursive, Courier, 'Courier New', monospace, 'Arial Black';
+}
+
+h3 {
+    text-align: end;
+    /* font-weight: 500; */
+    text-decoration: blue underline;
+    font-size: 22px;
+    font-family: Georgia;
+
+}
+
+p {
+    text-align: center;
+    font-weight: normal;
+    /* text-decoration: rgb(150, 220, 0) wavy underline; */
+    /* text-decoration: dotted blueviolet overline; */
+    /* text-decoration: overline; */
+    /* text-decoration: line-through; */
+    line-height: 2.1;
+    letter-spacing: 1.1px;
+    font-size: 18px;
+    /* font-family: 'Hoefler Text', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-family: 'avant garde', didot, sans-serif;
+
+    
+}
+/* 
+h2::p {
+    text-decoration: line-through;
+} h2 k andar koi pragraph nhi hai. */
+
+a {
+    color: #f00;
+    text-decoration: none;
+}
