@@ -1,0 +1,60 @@
+* {
+    font-family:"Gill Sans";
+    /* text-decoration: red underline; */
+    /* background-color: orange; */
+}
+
+h3,
+h1 {
+    color: rgb(185, 43, 39);
+}
+
+/* id selector */
+#login {
+    background-color: #fff;
+}
+
+#signup {
+    background-color: rgb(185, 43, 39);
+    color: #fff;
+}
+
+/* class selector */
+.upvote {
+    background-color: green;
+    color: aliceblue;
+    /* color: #fff; */
+}
+
+/*descendant selector*/
+nav ul li a{
+    color : rgb(184, 33, 109);
+}
+
+/* attribute selector */
+/* 
+a [href="/catlyn"]
+{
+    background-color:chocolate;
+} */
+
+/* child combinator */
+p > a {
+    color : #fa0;
+}
+
+/* sibling combinator */
+p + h3 {
+    text-decoration: blue underline;
+}
+
+.upvote + button {
+    background-color : hotpink;
+    color: ghostwhite;
+}
+
+/* practice question */
+div[id="myId"] p{
+    /* here I used descendant selector because it is not given that para is direct child of div or not */
+    color: green;
+}
