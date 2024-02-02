@@ -4,6 +4,12 @@
     /* background-color: orange; */
 }
 
+q{
+    color:#0fb;
+    font-weight:100;
+    font-family:Arial;
+}
+
 h3,
 h1 {
     color: rgb(185, 43, 39);
@@ -57,4 +63,101 @@ p + h3 {
 div[id="myId"] p{
     /* here I used descendant selector because it is not given that para is direct child of div or not */
     color: green;
+}
+
+/* pseudo class */
+/* :hover */
+button:hover { /*take no space before or after ':' */
+    background-color:#000;
+    color: #fff;
+    font-weight: 800;
+    font-size: 13.7px;
+}
+
+h3:hover {
+    font-weight: bold;
+    text-decoration: wavy blue underline;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+div[id="myId"]>p:hover {
+    font-weight: 600;
+}
+
+p:hover {
+    font-weight:700;
+}
+
+/* :active */
+button:active {
+    background-color: red;
+    color : black;
+}
+
+h3:active {
+    background-color : #f00;
+    color: #fff;
+}
+
+/* :checked */
+input[id="kurkure"]:checked+label{
+    color: rgb(219, 28, 28);
+    font-weight: 600;
+}
+
+input[id="lays"]:checked+label{
+    color: rgb(60, 60, 180);
+    font-weight: 600;
+}
+
+input[type="checkbox"]:checked+label {
+    color: green;
+    font-weight: 800;
+}
+
+div:nth-of-type(2n) {
+    background-color: wheat;
+}
+
+/* pseudo elements */
+/* ::first-letter */
+h3::first-letter {
+    color :#fa0;
+}
+
+/* first-line */
+div[id="myId"]>p::first-line {
+    text-decoration: red underline;
+    color:darkmagenta;
+}
+
+div[id="myId"]>p::second-line {
+    color: black;
+}
+/*second-line doesn't work :-D */
+
+/* selection */
+h3::selection {
+    color: #000;
+    background-color: rgb(194, 85, 139);
+}
+
+div[id="myId"]>p::selection{
+    color:black;
+    background-color: rgb(194, 85, 139);
+}
+
+/* ::after */
+#myName::after{
+    content: "Om Raja";
+    /* content: url('https://www.github.com/Om-Raja'); */
+    display:inline-block;
+
+    color: #0f0;
+    font-weight:700;
+}
+
+q::before{
+    content: "Quote of the day >> ";
+    color: #000;
 }
