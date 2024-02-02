@@ -1,0 +1,40 @@
+#mainTopic {
+    color: #00f;
+}
+
+* {
+    text-align: center;
+}
+
+.heading {
+    font-family: Georgia;
+}
+
+.paragraph {
+    color: #fff;
+    background-color: cornflowerblue;
+}
+
+div button {
+    background-color: purple;
+    color: azure;
+}
+
+button:hover {
+    background-color: #ff0;
+    color: blue;
+}
+
+p:nth-of-type(2n+1) {
+    color: #ff0;
+}
+
+h1::first-letter {
+    color: #f00;
+}
+
+input:checked+label {
+    color: darkgreen;
+}
+
+/* Q10. ascending order = h1 < .main < div .main < #mainTopic */
