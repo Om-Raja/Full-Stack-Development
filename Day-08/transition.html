@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transitioin in css</title>
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            text-align: center;
+            background-color: rgba(0,0,255,0.5);
+            font-size: 2em;
+            /* transition: 1s 1s; */
+            /* transition-duration: 500ms; */
+            /* transition-delay: 100ms; */
+            /* margin: 0 auto; */
+            margin-top: 10px;
+            transition: margin 2s linear 0.1s,
+                        border-radius 1s cubic-bezier(0.1, -0.6, 0.2, 0) 10ms,
+                        background-color 1s ease-in-out 1s;
+        }
+        
+        div:hover {
+            background-color: orange;
+            border-radius: 30%;
+            margin-top:400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">transition</div>
+</body>
+</html>
