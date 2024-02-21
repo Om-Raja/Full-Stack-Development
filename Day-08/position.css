@@ -1,0 +1,51 @@
+div {
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    margin: 13px;
+    text-align: center;
+    background-color: #0f0a;
+}
+div:nth-of-type(2n){
+    background-color: #f00a;
+}
+
+section{
+    display: inline-block;
+}
+
+/* position */
+/* static, fixed, relative, absolute */
+/* sticky */
+
+#static{
+    position: static;
+    /* position will not change */
+    top: 100px;
+    left: 100px;
+    /* nothing changed */
+}
+
+#relative {
+    position: relative;
+    /* position will change in the respect of center of the element */
+    /* right: 50px; */
+    bottom: 40px;
+    top: 100px;
+    left: 20px;
+}
+/* top ka priority bottom se jyada hai and `left` ka priority `right` se jyada hoga. */
+
+#absolute{
+    position: absolute;
+    /* document ke respect me position set hoga*/
+    top: 100px;
+    left: 100px;
+}
+
+#fixed{
+    position: fixed;
+    /*position fix rahegi , scroll karne par bhi chipki rahegi usi jagah screen pe */
+    top: 40px;
+    right: 70px;
+}
