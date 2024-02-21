@@ -1,0 +1,40 @@
+#face{
+    margin: auto;
+    height: 400px;
+    width: 400px;
+    background-color: #ffa500ff;
+    border-radius: 50%;
+}
+
+.eye{
+    width: 10%;
+    height: 10%;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+#leye{
+    position: relative;
+    top: 26.5%;
+    left: 25%;
+}
+
+#reye{
+    position:relative;
+    top: 17%;
+    left: 65%;
+}
+
+#mouth{
+    width: 40%;
+    height: 17%;
+    background-color: #f00;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    position: relative;
+    top: 40%;
+    left: 30%;
+    /* transform:rotate(-9deg) skew(60deg) */
+
+
+}
