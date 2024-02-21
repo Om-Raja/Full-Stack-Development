@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display Flex</title>
+    <style>
+        section{
+            width: 900px;
+            height: 300px;
+            border: 2px solid black;
+            /* colors border ke bahar ja rahe hai isliye ab section ko display:flex kar dunga */
+            display: flex;
+            flex-direction: row;
+            /* flex-direction: column; */
+        }
+        
+        h3{
+            text-align: center; 
+            background-color:aliceblue;
+            display:inline-block;
+            margin-left: 35vw;
+        }
+        div{
+            color: #fff;
+            width: 1000px;
+            height: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h3>Flex display Playground</h3>
+    <section>
+        <div style="background-color:violet">Violet</div>
+        <div style="background-color:indigo">Indigo</div>
+        <div style="background-color:blue">Blue</div>
+        <div style="background-color:green">Green</div>
+        <div style="background-color:yellow">Yellow</div>
+        <div style="background-color:orange">Orange</div>
+        <div style="background-color:red">Red</div>
+    </section>
+</body>
+</html>
