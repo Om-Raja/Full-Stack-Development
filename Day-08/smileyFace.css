@@ -4,6 +4,7 @@
     width: 400px;
     background-color: #ffa500ff;
     border-radius: 50%;
+    box-shadow: 6px 7px 12px black;
 }
 
 .eye{
