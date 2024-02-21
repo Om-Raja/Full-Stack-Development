@@ -7,7 +7,7 @@
     text-align: center;
     border-radius: 16px;
     box-shadow: 3px 4px 10px black;
-    transition: 300ms;
+    transition: 350ms;
 }
 
 h3{
@@ -32,11 +32,13 @@ img{
 }
 
 #om:hover {
-    width: 231px;
-    height: 321px;
+    /* width: 231px;
+    height: 321px; */
+    transform: scale(1.02, 1.04);
 }
 
 #utkarsh:hover{
-    width: 231px;
-    height: 321px;
+    /* width: 231px;
+    height: 321px; */
+    transform: scale(1.02, 1.04);
 }
