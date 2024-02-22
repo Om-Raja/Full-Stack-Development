@@ -7,12 +7,25 @@
     <style>
         section{
             width: 900px;
-            height: 300px;
+            height: 500px;
             border: 2px solid black;
             /* colors border ke bahar ja rahe hai isliye ab section ko display:flex kar dunga */
+            
             display: flex;
-            flex-direction: row;
-            /* flex-direction: column; */
+
+            flex-direction: row; /* flex-itmes row me adjust honge but abhi ye kaam nhi karega kyunki iske niche flex-direction: column laga rakha hai toh cascadeing rule ki wajah se flex-direction: column apply hoga yaha pe */
+
+            flex-direction: column-reverse; /* main aixs ka direction bottom to top ho gaya */
+
+            justify-content: flex-start; /* saare contents ko starting ki taraf shift kar dega */
+
+            justify-content: center; /* saare content ko container ke center me place kar dega */
+
+            justify-content: space-between; /* saare elements ke bich me spaces aa jayenge. ye wo spaces hai jo extra bach rahe the. Agar koi space extra me bach hi nahi raha tha toh yaha koi space nhi aayega. Isme beginning aur ending me koi space nhi aata. */
+
+            justify-content: space-around; /* beginning aur ending me bhi space aayega but wo space-between ke size ka half hoga */
+            
+            justify-content: space-evenly; /* all spaces are even along with beginning and ending spaces */
         }
         
         h3{
