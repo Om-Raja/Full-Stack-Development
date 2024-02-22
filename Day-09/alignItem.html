@@ -1,0 +1,65 @@
+<!--
+    Align Items :
+    ______________
+
+    Distribute our items along cross axis.
+
+    => It is same like `justify-content`, but the only difference is `justify-content` aligns the items along main aixs whereas `align-items` aligns contents along cross axis.
+
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+    align-items: baseline;
+
+    => align-items: baseline is used to make all the contents of flex-itmes on the same base. Koi bhi flex-item ka size bada ho ya content ka size bada ho sab ke sab content(text) same baseline pe aa jayenge.
+    
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align item</title>
+    <style>
+        section{
+            width: 900px;
+            height: 500px;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: rows;
+            align-content: flex-end;
+            align-items: flex-end;
+            /* justify-content: space-evenly; */
+            /* flex-wrap: wrap; */
+            /* align-items: flex-end; */
+            /* align-items: baseline; */
+        }
+        
+        h3{
+            text-align: center; 
+            background-color:aliceblue;
+            display:inline-block;
+            margin-left: 35vw;
+        }
+        div{
+            color: #fff;
+            width: 200px;
+            height: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h3>Flex display Playground</h3>
+    <section>
+        <div style="background-color:violet">Violet</div>
+        <div style="background-color:indigo">Indigo</div>
+        <div style="background-color:blue">Blue</div>
+        <div style="background-color:green">Green</div>
+        <div style="background-color:yellow">Yellow</div>
+        <div style="background-color:orange">Orange</div>
+        <div style="background-color:red">Red</div>
+    </section>
+</body>
+</html>
