@@ -1,0 +1,66 @@
+<!--
+    Flex Wrap: sets whether flex items are forced onto one line or can wrap onto multiple lines.
+
+    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+
+    nowrap = flex-items wrap nhi honge.
+
+    wrap = main axis ke along items wrap ho jayenge. Matlab agar main axis ke along size fill ho gayi toh next row me flex-items chale jayenge agar flex-direction: row hai toh. next column me chale jayenge agar flex-direction: column hai toh. Ye use kiya jata hai jab hum chahte hai ki humare flex-items ki dimensions origina hi rahe flexing ki wajah se change na ho.
+
+    wrap-reverse = same as wrap.But isme first row last row ho jayega, second row second-last row ho jayega and so on. Ager flex-direction: column hai toh first column, last column ban jayega aur second column second-last column ban jayega and so on. Matlab rows ya column ka order reverse ho jata hai.
+
+ => agar kisi container ko wrap kehta hoon toh wo flex-items ko multiple line me jaane dega. Lekin agar `nowrap` kehta hoon toh wo flex-items ko single line me hi rakhega.
+
+ => Different rows can have different space size between flex-items. Because the spaces distributed between the flex-items are the space that was left in that row. Suppose another row have less flex-items then that will have more spaces. In that case another row will have larger space size between flex-items. Same concept is applicable for column too I guess.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex wrap</title>
+    <style>
+        section{
+            width: 900px;
+            height: 500px;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            /* justify-content: flex-start; */
+            /* flex-wrap: nowrap; */
+            /* flex-wrap: wrap; */
+            flex-wrap: wrap-reverse;
+        }
+        
+        h3{
+            text-align: center; 
+            background-color:aliceblue;
+            display:inline-block;
+            margin-left: 35vw;
+        }
+        div{
+            color: #fff;
+            width: 200px;
+            height: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h3>Flex display Playground</h3>
+    <section>
+        <div style="background-color:violet">Violet</div>
+        <div style="background-color:indigo">Indigo</div>
+        <div style="background-color:blue">Blue</div>
+        <div style="background-color:green">Green</div>
+        <div style="background-color:yellow">Yellow</div>
+        <div style="background-color:orange">Orange</div>
+        <div style="background-color:red">Red</div>
+    </section>
+</body>
+</html>
