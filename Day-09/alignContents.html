@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align contents</title>
+    <style>
+        section{
+            width: 700px;
+            height: 500px;
+            border: 2px solid black;
+            display: flex;
+            /* flex-direction: rows; */
+            flex-direction: row;
+            flex-wrap: nowrap;
+            flex-wrap: wrap;
+            /* align-items: flex-start; */
+            /* align-content: flex-start;
+            align-content: flex-end;
+            align-content: center;
+            align-content: space-between;
+            align-content: space-around;
+            align-content: space-evenly; */
+            /* align-content: flex-start;
+            align-content: flex-end;
+            align-content: center;
+            align-content: space-between;
+            align-content: space-around;
+            align-content: space-evenly; */
+            /* flex-direction: row;  */
+            /* flex-direction: column; */
+            /* align-content: baseline; */
+            flex-wrap: nowrap;
+        }
+        
+        h3{
+            text-align: center; 
+            background-color:aliceblue;
+            display:inline-block;
+            margin-left: 35vw;
+        }
+        div{
+            color: #fff;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+        }
+        #red {
+            /* align-self: flex-start; */
+            /* align-self: flex-end; */
+            /* align-self: center; */
+            /* flex-basis: 150px; */
+            /* flex-grow: 2; */
+            /* flex-shrink: 2; */
+            /* flex: 2 2 100px; */
+            flex: 2 2;
+        }
+
+        #orange{
+            /* flex-grow: 1; */
+            /* flex-shrink: 3; */
+            /* flex: 2 2 100px; */
+            flex: 2 2;
+        }
+    </style>
+</head>
+<body>
+    <h3>Flex display Playground</h3>
+    <section>
+        <div style="background-color:violet">Violet</div>
+        <div style="background-color:indigo">Indigo</div>
+        <div style="background-color:blue">Blue</div>
+        <div style="background-color:green">Green</div>
+        <div style="background-color:yellow">Yellow</div>
+        <div style="background-color:orange" id="orange">Orange</div>
+        <div style="background-color:red" id="red">Red</div>
+    </section>
+</body>
+</html>
