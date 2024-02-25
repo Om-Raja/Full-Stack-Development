@@ -1,0 +1,43 @@
+.mediaQuery{
+    width: 200px;
+    height: 300px;
+    background-color: #000a;
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+}
+
+@media(width: 500px){
+    .mediaQuery{
+        background-color: black;
+        color: #fff;
+    }
+}
+
+@media(min-width: 700px)
+{
+    .mediaQuery{
+        background-color: green;
+        color: blue;
+    }
+    #nav{
+        background-color: pink;
+        border: 2px solid black;
+        color: #fff;
+    }
+}
+@media(max-width: 700px)
+{
+    .mediaQuery{
+        background-color: purple;
+        color: red;
+    }
+}
+
+@media(min-width: 200px) and (max-width: 400px)
+{
+    .mediaQuery{
+        background-color: yellow;
+        color: #000;
+    }
+}
