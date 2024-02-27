@@ -29,7 +29,8 @@
     animation-direction: alternate-reverse;
     animation-iteration-count: infinite; */
 
-    animation: fontAnimation 4s ease-in-out 0s alternate infinite, colorAnimate 3s ease-in-out 0s alternate infinite, widthAnimation 4s ease-in-out 600ms alternate-reverse infinite;
+    /* animation: fontAnimation 4s ease-in-out 0s alternate infinite, colorAnimate 3s ease-in-out 0s alternate infinite, widthAnimation 4s ease-in-out 600ms alternate-reverse infinite; */
+    animation: 2s reverse 3 0s ease-in fontAnimation;
 }
 
 
