@@ -30,16 +30,29 @@
     animation-iteration-count: infinite; */
 
     /* animation: fontAnimation 4s ease-in-out 0s alternate infinite, colorAnimate 3s ease-in-out 0s alternate infinite, widthAnimation 4s ease-in-out 600ms alternate-reverse infinite; */
-    animation: 2s reverse 3 0s ease-in fontAnimation;
+    animation: 4s alternate 3 0s ease-in fontAnimation;
 }
 
 
 @keyframes fontAnimation{
-    from{
+    /* from{
         font-size: 20px;
     }
     to{
         font-size: 40px;
+    } */
+
+    0% {
+        font-size: 20px;
+    }
+    50%{
+        font-size: 30px;
+    }
+    75%{
+        font-size: 10px;
+    }
+    100%{
+        font-size: 50px;
     }
 }
 
