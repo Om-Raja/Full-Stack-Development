@@ -120,24 +120,6 @@ i:hover {
   cursor: pointer;
 }
 
-@media (max-width: 420px) and (min-width: 400px) {
-  #addToLibrary {
-    left: 30%;
-  }
-  #arrowFromLibrary {
-    left: 35%;
-  }
-}
-
-@media (max-width: 400px) {
-  #addToLibrary {
-    left: 20%;
-  }
-  #arrowFromLibrary {
-    left: 25%;
-  }
-}
-
 .library-nav i:hover, img:hover{
     opacity:1;
     color: #fff;
