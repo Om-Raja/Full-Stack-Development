@@ -68,16 +68,18 @@ i:hover {
 
 .library {
   height: 68%;
+  display: flex;
+  flex-direction: column;
+  background-color: #121212;
+  margin-top: 10px;
+  border-radius: 1rem;
+  position: relative;
 }
 
 .library-nav {
   display: flex;
-  border-radius: 1rem;
-  background-color: #121212;
-  height: 100%;
+  height: 10%;
   width: 100%;
-  margin-top: 10px;
-  position: relative;
 }
 
 .library-nav img {
@@ -92,7 +94,7 @@ i:hover {
   text-decoration: none;
   font-size: 1rem;
   color: #b2b3b2;
-  font-weight: 600;
+  font-weight: 600; 
   line-height: 40px;
 }
 
@@ -123,4 +125,48 @@ i:hover {
 .library-nav i:hover, img:hover{
     opacity:1;
     color: #fff;
+}
+
+.box1, .box2{
+  background-color: #242424;
+  width: 95%;
+  height: 50%;
+  padding: 1px 0px;
+  margin-left: 3%;
+  margin-top: 4%;
+  border-radius: 0.7rem;
+}
+
+.box2{
+  padding-bottom: 2px;
+}
+
+.starter p, .starter h4{
+  padding-left: 18px;
+}
+
+.starter p{
+  font-size: 14px;
+  line-height: 0;
+}
+
+
+.box1 button{
+  border: none;
+  width: 132px;
+  height: 34px;
+  padding: 4px 16px;
+  border-radius: 55px;
+  font-weight: 700;
+  margin: 10px 18px;
+}
+
+.box2 button{
+  border: none;
+  width: 143px;
+  height: 32px;
+  padding: 4px 16px;
+  border-radius: 55px;
+  font-weight: 700;
+  margin: 10px 18px;
 }
