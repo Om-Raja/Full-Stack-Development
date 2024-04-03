@@ -104,3 +104,14 @@ switch(day)
     default:
         console.log("Invalid input");
 }
+
+// alerts and prompt
+let YourRollNo = prompt("Enter your roll no.");
+alert("Something is wrong");
+console.log("roll no. = ", YourRollNo);
+
+let firstName = prompt("Eneter your first name");
+let lastName = prompt("Enter your last name");
+console.log("Hi", firstName, lastName);
+let msg = "hi " + firstName + " " + lastName;
+alert(msg);
