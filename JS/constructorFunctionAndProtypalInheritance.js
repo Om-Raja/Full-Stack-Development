@@ -13,3 +13,12 @@ console.log(Niki.crn);
 console.log(Om.branch);
 
 console.log(Niki);
+
+// prototypal inheritance
+// It allows you to add new properties or methods to all existing objects or an object constructor
+
+Constructor.prototype.printMyName = function(){
+    console.log(this.name);
+}
+
+console.log(Niki.printMyName());
