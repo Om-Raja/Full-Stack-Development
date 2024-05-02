@@ -13,7 +13,10 @@ while(true)
     console.log(`You are right ${RANDOM} is the correct answer`);
     break;
   }
+  else if(guess < RANDOM){
+    guess = prompt("Hint: Your guess was smaller, go again!");
+  }
   else{
-    guess = prompt("Wrong! guess try again or \"quit\" ");
+    guess = prompt("Hint: Your guess was larger, go again!");
   }
 }
