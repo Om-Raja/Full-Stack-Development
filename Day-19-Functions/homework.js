@@ -30,44 +30,59 @@ argument. */
 function countVowel(str)
 {
     let count = 0;
-    for(let i = 0; i < str.length; i++)
-    {
-        if (str[i] == 'a')
-        {
-            count++;
-        }
-        else if(str[i] == 'e'){
-            count++;
-        }
-        else if(str[i] == 'i')
-        {
-            count++;
-        }
-        else if(str[i] == 'o')
-        {
-            count++;
-        }
-        else if(str[i] == 'u')
-        {
-            count++;
-        }
-        else if(str[i] == 'A')
-        {
-            count++;
-        }
-        else if(str[i] == 'E')
-        {
-            count++;
-        }
-        else if (str[i] == 'I')
-        {
-            count++;
-        }
-        else if(str[i] == 'O')
-        {
-            count++;
-        }
-        else if(str[i] == 'U')
+    for(let i = 0; i < str.length; i++){
+    // {
+    //     if (str[i] == 'a')
+    //     {
+    //         count++;
+    //     }
+    //     else if(str[i] == 'e'){
+    //         count++;
+    //     }
+    //     else if(str[i] == 'i')
+    //     {
+    //         count++;
+    //     }
+    //     else if(str[i] == 'o')
+    //     {
+    //         count++;
+    //     }
+    //     else if(str[i] == 'u')
+    //     {
+    //         count++;
+    //     }
+    //     else if(str[i] == 'A')
+    //     {
+    //         count++;
+    //     }
+    //     else if(str[i] == 'E')
+    //     {
+    //         count++;
+    //     }
+    //     else if (str[i] == 'I')
+    //     {
+    //         count++;
+    //     }
+    //     else if(str[i] == 'O')
+    //     {
+    //         count++;
+    //     }
+    //     else if(str[i] == 'U')
+    //     {
+    //         count++;
+    //     }
+        if(
+            str.charAt(i) == 'a' ||
+            str.charAt(i) == 'e' ||
+            str.charAt(i) == 'i' ||
+            str.charAt(i) == 'o' ||
+            str.charAt(i) == 'u' ||
+            str.charAt(i) == 'A' ||
+            str.charAt(i) == 'E' ||
+            str.charAt(i) == 'I' ||
+            str.charAt(i) == 'O' ||
+            str.charAt(i) == 'U'
+        )
         {
             count++;
         }
