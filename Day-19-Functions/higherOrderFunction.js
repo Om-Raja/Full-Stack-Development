@@ -15,4 +15,30 @@ function print() {
 
 HigherOrder(print, 4); // print() is syntax error, so pass print as argument
  // or
-HigherOrder(function(){console.log("Raja Om")}, 10); // an anonymous function as direct argument
+HigherOrder(function(){console.log("Raja Om")}, 2); // an anonymous function as direct argument
+
+//factory function - Higher order function
+
+function oddOrEvenTest(request)
+{
+    if(request.trim() == "even")
+    {
+        return function even(n) // function will run even if you name it or not
+        {
+            console.log(n % 2 == 0);
+        }
+    }
+    else if (request.trim() == "odd")
+    {
+        function odd(n){
+            console.log(!(n % 2 == 0));
+        }
+        return odd;
+    }
+}
+
+let request = "even";
+let res = oddOrEvenTest(request);
+res(4);
+let res2 = oddOrEvenTest("odd");
+res2(4);
