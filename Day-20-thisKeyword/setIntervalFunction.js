@@ -6,5 +6,7 @@ let id = setInterval(() => {
 
 // use smartness hehehe
 setTimeout(() => {
+    console.log("I am setTimeout function.")
+    console.log("Stopping your setInterval function LoL");
     clearInterval(id);
 }, 10000);
