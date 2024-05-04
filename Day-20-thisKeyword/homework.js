@@ -47,6 +47,7 @@ const object = {
 setTimeout(object.key, 1000); // here setTimeout is calling the function, therefore 'this' in key = window
 object.key(); // here object is calling the key function therefore 'this' in key = object itself
 object.key2();
+setTimeout(() => {object.logMessage2()}, 10000); // "Hello World"
 
 setTimeout(object.logMessage2, 2000);
 object.logMessage2();
