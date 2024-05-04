@@ -9,10 +9,12 @@ let sum = arr.reduce(function(accumulator, ele){
 
 console.log(sum); // output = 55 ✅
 
-let accumulator2 = 1000;
+// let accumulator2 = 1000;
 
 let diff = arr.reduce((accumulator2, ele)=>{
     return (accumulator2 - ele);
-});
+}, 1000); // this is correct approach to give accumulator some initial value
+
+// here initial value of accumulator = 1000
 
 console.log(diff); // expected output : 1000 - 55 = 945, but we get (-53); Why ?? 
