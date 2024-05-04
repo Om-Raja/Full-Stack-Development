@@ -33,6 +33,9 @@ console.log(evenOrNot); // false, not even
 // Q3
 const object = {
     message: "Hello World",
+    logMessage2(){
+        console.log(this.message);
+    },
     key: function logMessage(){
         console.log(this.message);
     },
@@ -41,8 +44,12 @@ const object = {
     }
 };
 
-setTimeout(object.key, 1000);
+setTimeout(object.key, 1000); // here setTimeout is calling the function, therefore 'this' in key = window
+object.key(); // here object is calling the key function therefore 'this' in key = object itself
 object.key2();
+
+setTimeout(object.logMessage2, 2000);
+object.logMessage2();
 
 // Q4 
 // doubt in Q3 & Q4
