@@ -17,3 +17,10 @@
     height: 25rem;
     margin: 5px;
 }
+
+.mainHeading{
+    text-decoration: underline purple wavy;
+    color: red;
+    font-weight: 900;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
