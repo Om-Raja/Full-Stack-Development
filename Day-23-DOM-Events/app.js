@@ -9,3 +9,15 @@ btn.onclick = function(){
 btn.addEventListener("dblclick", function(){
     console.log("You clicked the button twice");
 })
+
+let box = document.querySelector("div");
+let para = document.querySelector("p");
+
+box.classList.add('box');
+box.addEventListener("mouseenter", ()=>{
+    console.log("Mouse entered in box");
+});
+
+para.addEventListener("mouseleave", ()=>{
+    console.log("Mouse went out of para");
+});
