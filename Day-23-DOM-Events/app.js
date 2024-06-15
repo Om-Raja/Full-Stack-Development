@@ -53,7 +53,28 @@ button.addEventListener("keydown", function(event){
 });
 
 let form = document.querySelector("form");
+let input = document.querySelector("form input");
+
 form.addEventListener("submit", function(event){
     event.preventDefault();
     console.log("Form submitted");
-})
+    alert("Form submitted");
+    
+    console.dir(input);
+    console.log(input.value);
+
+    // extracting form using form object
+    console.dir(form);
+    let user = this.elements[0];
+    let pass = form.elements[1];
+
+    
+    alert(`Hi ${user.value}! Your password is set to ${pass.value}`);
+});
+
+    user.addEventListener("change", function(){
+        console.log("user value is changed to ", user.value);
+    }); 
+    user.addEventListener("input", function(){
+        console.log("single change occured. User = ", user.value);
+    })
