@@ -5,7 +5,11 @@ addBtn.addEventListener("click", function(event){
     console.log(`task is to ${task.value} is added to the list`);
     let newTask = document.createElement("li");
     newTask.innerText = task.value;
-    ul.appendChild(newTask);
+    ul.appenChild(newTask);
+    
+    let delBtn = document.createElement("button");
+    delBtn.innerText = "Done";
+    newTask.appendChild(delBtn);
     
     task.value=""; // to reset the input box;
 });
@@ -16,7 +20,13 @@ task.addEventListener("keydown", function(event){
         let newTask = document.createElement("li");
         newTask.innerText = this.value;
         ul.appendChild(newTask);
+
+        //creating delete button
+        let delBtn = document.createElement("button");
+        delBtn.innerText = "Done";
+        newTask.appendChild(delBtn);
     
         task.value = "";
     }
 });
+
