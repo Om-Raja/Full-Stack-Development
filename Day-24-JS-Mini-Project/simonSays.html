@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says game</title>
+    <link rel="stylesheet" href="simonSays.css"/>
+</head>
+<body>
+    <h1>Simon Says Game</h1>
+    <h4>Press any key to start</h4>
+    
+    <div id="button-container">
+        <div id="first-line">
+            <div id="firstBtn" class="button firstBtn" type="button">1</div>
+            <div id="secondBtn" class="button secondBtn" type="button">2</div>
+        </div>
+        <div id="second-line">
+            <div id="thirdBtn" class="button thirdBtn" type="button">3</div>
+            <div id="fourthBtn" class="button fourthBtn" type="button">4</div>
+        </div>
+    </div>
+    <div id="rules">
+        <h3>Rules</h3>
+        <ul>
+            <li>Watch carefully which color blinks</li>
+            <li>Press same color that was blinked</li>
+            <li>After each level, you have to press colors sequentially from first color</li>
+        </ul>
+        <h3 id="highestScore"></h3>
+    </div>
+
+    <script src="simonSays.js"></script>
+</body>
+</html>
