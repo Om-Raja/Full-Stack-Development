@@ -84,3 +84,56 @@ changeColor("red", 1000).then(function(){
     console.log("some error occured");
     console.log(error);
 })
+
+// asynchronus function
+function num(){
+    return new Promise(function(resolve, reject){
+        setTimeout(()=>{
+            let number = Math.floor(Math.random() * 10 + 1);
+            console.log(number);
+            resolve();
+            // resolve();
+        }, 2000)
+    })
+}
+
+async function callNum(){
+    await num();
+    await num();
+     num();
+}
+
+callNum();
+
+// using async function to change color -
+let h1 = document.querySelector("h1");
+function colorChangeKro(color){
+    return new Promise(function(resolve, reject){
+        let randomNumber = Math.floor(Math.random()*10) + 1;
+        if(randomNumber > 3){
+            setTimeout(function(){
+                h1.style.color = color;
+                console.log("color changed");
+                resolve();
+            }, 1000);
+        }else{
+            reject();
+        }
+    });
+}
+
+async function callChangeColor(){
+    try{
+        await colorChangeKro("red");
+        await colorChangeKro("blue");
+        await colorChangeKro("orange");
+        await colorChangeKro("green");
+        await colorChangeKro("skyblue");
+        colorChangeKro("pink");
+    } catch(err){
+        console.log(err);
+    }
+    console.log("Hello world");
+}
+
+callChangeColor();
